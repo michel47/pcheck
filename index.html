@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker &amp; Fortifier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pcheck-shield.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Password Checker & Fortifier</h1>
+            <img src="pcheck-shield.svg" alt="Password Checker Shield">
+        </header>
+
+<div class="form-container">
+<div class="password-container">
+    <input type="password" autocomplete="on" id="passwordInput" placeholder="Enter your password"><span class="action-icon" id="eye-icon">👁</span>
+</div>
+    <button id="copyButton">Copy Fortified Password</button>
+</div>
+        
+        <div id="entropyGauge" title="Entropy" class="gauge-container">
+            <div class="gauge-bar"></div>
+            <div class="gauge-label"></div>
+        </div>
+        <div id="guessesGauge" title="Log10(Guesses)" class="gauge-container">
+            <div class="gauge-bar"></div>
+            <div class="gauge-label"></div>
+        </div>
+        <p id="result"></p>
+        <p id="fortifiedPassword"></p>
+        <p id="fortifiedPasswordStats"></p>
+        <p><span id="entropy"></span>; 
+        <span id="shannonEntropy"></span></p>
+        <div id="zxcvbnResult"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
