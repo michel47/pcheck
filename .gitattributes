@@ -1,0 +1,14 @@
+.env filter=git-crypt diff=git-crypt
+env.rc filter=git-crypt diff=git-crypt
+*cred* filter=git-crypt diff=git-crypt
+*clear* filter=git-crypt diff=git-crypt
+*p*ssw*d* filter=git-crypt diff=git-crypt
+*jwt* filter=git-crypt diff=git-crypt
+*.der* filter=git-crypt diff=git-crypt
+*.pem* filter=git-crypt diff=git-crypt
+*.sec* filter=git-crypt diff=git-crypt
+*.key* filter=git-crypt diff=git-crypt
+*signa* filter=git-crypt-michelc diff=git-crypt-michelc
+secrets/** filter=git-crypt diff=git-crypt
+*.asc !filter !diff
+.gitattributes !filter !diff
